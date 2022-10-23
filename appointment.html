@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgeous Beauty Salon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d090532b7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="headers">
+    <div id="preloader"></div>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png" type="gif"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallary.html">GALLERY</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-duotone fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <h2>Book Your Appointment</h2>
+
+    </section>
+
+    <!-------------------------Form------------------>
+    <section id="bg" class="form">
+        <h2>Get In Touch</h2>
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Mobile</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Mobile no.">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Date</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="dd/mm/yyyy">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Massage</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="massage" name="massage" placeholder="Massage" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Book Appointment">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <!---------------------------------About------------------->
+
+    <section class="about">
+        <h3>About Us</h3>
+        <p>Gorgeous Beauty Salon was created for our local residents, friends, clients, and families. With 22
+            stylists and over 7 years of experience, Gorgeous Beauty Salon became the most sought out Salon in the
+            Agra for our Artistic work, talented Stylists and most welcoming atmosphere.
+            We have been Awarded by Jawed Habib Sir for best hair dress in Agra. Our motto still stands today....
+            Gorgeous Beauty Salon ~ Where we "Specialize" in YOU! Come see why our clients come from all over for
+            our precise, detailed and passionate work...</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/saroj.jaiswal.7524" target="_blank"><span class="tooltip symbol"
+                    title="Facebook"><i class="fa  fa-2x fa-brands fa-facebook"></i></span></a>
+            <a href="https://instagram.com/gorgeous_beauty_salon_?igshid=YmMyMTA2M2Y=" target="_blank"><span
+                    class="tooltip symbol" title="Instagram"><i class="fa fa-2x fa-brands fa-instagram"></span></i></a>
+            <a href="https://goo.gl/maps/PGVZz37zGRjL2L2ZA" target="_blank"><span class="tooltip symbol"
+                    title="Google-Map"><i class="fa fa-2x fa-brands fa-google-plus-g"></span></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=919012658690&text&type=phone_number&app_absent=0"
+                target="_blank"><span class="tooltip symbol" title="Whatsapp"><i
+                        class="fa fa-2x fa-brands fa-whatsapp"></span></i></a>
+        </div>
+        <p>Website design by <a href="https://www.facebook.com/acuteaakash" target="_blank"><span class="maker"
+                    title="Facebook-Id"> Ritik Jaiswal</span></a>
+        </p>
+    </section>
+
+
+
+
+
+
+    <!---------javascript--------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+
+        })
+    </script>
+
+</body>
+
+</html>
